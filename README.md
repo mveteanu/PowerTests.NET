@@ -21,7 +21,7 @@ Features
 - State of the art security for user data;
 - Minimal system requirements (just a web browser).
 
-[Problem Editor](img/pb_editor.png)
+![Problem Editor](img/pb_editor.png)
 
 Note: PowerTests.NET was originally designed to be used in educational insitutions from Romania.
 
