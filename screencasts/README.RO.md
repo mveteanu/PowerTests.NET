@@ -8,20 +8,20 @@ Pentru o mai buna intelegere a capabilitatilor PowerTests.NET, va rog vizionati 
 Administratori
 --------------
 
-- [Prezentare cont administrator](screencasts/admin1.avi)
+- [Prezentare cont administrator](admin1.avi?raw=true)
 
 
 Profesori
 ---------
 
-- [Prezentare cont profesor](screencasts/prof1.avi)
-- [Crearea si editarea problemelor](screencasts/prof2.avi)
-- [Crearea si editarea testelor](screencasts/prof3.avi)
+- [Prezentare cont profesor](prof1.avi?raw=true)
+- [Crearea si editarea problemelor](prof2.avi?raw=true)
+- [Crearea si editarea testelor](prof3.avi?raw=true)
 
 
 Studenti
 --------
 
-- [Prezentare cont student](screencasts/stud1.avi)
+- [Prezentare cont student](stud1.avi?raw=true)
 
 Note: Versiunea in engleza a acestor prezentari se poate accesa folosind [README.md](README.md)
