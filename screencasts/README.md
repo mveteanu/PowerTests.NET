@@ -7,21 +7,21 @@ For a better understanding of PowerTests.NET capabilities, please check the foll
 Administrators
 --------------
 
-- [Administrator account overview](screencasts/admin1_en.avi)
+- [Administrator account overview](admin1_en.avi?raw=true)
 
 
 Professors
 ----------
 
-- [Professor account overview](screencasts/prof1_en.avi)
-- [Creating and editing test items](screencasts/prof2_en.avi)
-- [Creating and editing tests](screencasts/prof3_en.avi)
+- [Professor account overview](prof1_en.avi?raw=true)
+- [Creating and editing test items](prof2_en.avi?raw=true)
+- [Creating and editing tests](prof3_en.avi?raw=true)
 
 
 Students
 --------
 
-- [Student account overview](screencasts/stud1_en.avi)
+- [Student account overview](stud1_en.avi?raw=true)
 
 
 Note: The romanian version of these screencasts can be accessed using [README.RO.md](README.RO.md)
