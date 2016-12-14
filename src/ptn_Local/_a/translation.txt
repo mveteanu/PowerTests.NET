@@ -1,0 +1,19 @@
+August 24, 2003
+Started source code translation.
+Finish translating the comments from login folder
+
+November 11, 2006
+Restarted work on translation plus minor improvements
+
+November 12, 2006
+Note:	Cand traduc headerele tabelelor din paginile ...lista_cli.asp care contin TDC-uri -> 
+		trebuie sa traduc si paginile ...lista_dat.asp si apoi sa caut aparitiile GetTDCData 
+		si sa verific ce coloane se cer. Sa dau la sfarsit un FindAll.. sa ma asigur ca am 
+		corectat toate aparitiile lui GetTDCData.
+
+		Sa rezolv problema cu <%=DToSR(studinfo.DataValidareCurs,"DD/MM/YYYY")%> pt. 
+		date in format american.
+		Sa fac ferestrele putin mai mari.
+		
+		Finished translation in prof... remains only student.
+		

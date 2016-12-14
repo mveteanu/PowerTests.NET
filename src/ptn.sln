@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{BDD4A1A1-7A1F-11D0-AC13-00A0C91E29D5}") = "localhost/ptn", "ptn.vip", "{8EAB8EEA-4B85-4E9B-B20C-D55359595A82}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {8EAB8EEA-4B85-4E9B-B20C-D55359595A82}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+		0 = {8EAB8EEA-4B85-4E9B-B20C-D55359595A82}
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

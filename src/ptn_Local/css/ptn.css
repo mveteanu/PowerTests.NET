@@ -1,0 +1,291 @@
+BODY
+{
+    BACKGROUND-COLOR: BACKGROUND;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 10px;
+    MARGIN: 0px;
+}
+
+BODY.WHITE
+{
+    BACKGROUND-COLOR: White;
+    FONT-FAMILY: Verdana;
+    FONT-SIZE: 12px;
+    MARGIN: 0px
+}
+
+TABLE.Window
+{
+    BACKGROUND-COLOR: ButtonFace;
+    BORDER-BOTTOM: outset thin;
+    BORDER-LEFT: outset thin;
+    BORDER-RIGHT: outset thin;
+    BORDER-TOP: outset thin
+}
+
+TABLE
+{
+	font-family : Verdana;
+	font-size : 12px;
+}
+
+A 
+{
+	font-family: Verdana;
+	font-size: 10px;
+	text-decoration: none;
+	color: blue;
+}
+
+A:hover
+{
+	text-decoration:underline;
+	color: red;
+}
+
+.TCoolButton
+{
+	width:80px;
+	height:48px;
+	background-color:buttonface;
+	border:none;
+	display:inline;
+	font-family:verdana;
+	font-size:10px;
+	cursor:hand;
+	text-align:center;
+	padding:0px;
+	overflow:hidden;
+}
+
+.TForm
+  {
+    POSITION: absolute;
+    OVERFLOW: auto;
+    CURSOR: default;
+    
+    BACKGROUND-COLOR: ButtonFace;
+    BORDER-BOTTOM: outset thin;
+    BORDER-LEFT: outset thin;
+    BORDER-RIGHT: outset thin;
+    BORDER-TOP: outset thin;
+    COLOR: windowtext;
+    
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+  }
+  
+.TLabel
+  {
+    POSITION: absolute;
+    OVERFLOW: hidden;
+    CURSOR: default;
+
+    COLOR: windowtext;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+  }
+
+.TLinkLabel
+  {
+    POSITION: absolute;
+    OVERFLOW: hidden;
+   
+    COLOR: blue;
+    TEXT-DECORATION: none;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+  }
+
+.TLinkLabel:hover
+  {
+    POSITION: absolute;
+    OVERFLOW: hidden;
+   
+    COLOR: red;
+    TEXT-DECORATION: underline;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+  }
+  
+.TEdit
+  {
+    POSITION: absolute;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 9pt;
+  }
+
+.TEditPassword
+  {
+    POSITION: absolute;
+    FONT-Size: 9pt;
+  }
+
+.TButton
+  {
+    POSITION: absolute;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+    CURSOR: hand;
+  }  
+
+.TSpeedButton
+  {
+    POSITION: absolute;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+	TEXT-ALIGN:center;
+    CURSOR: hand;
+
+	HEIGHT:25;
+	WIDTH:25;
+	BORDER:1px solid threedface;
+  }  
+
+.TSpeedButtonUp
+  {
+    POSITION: absolute;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+    TEXT-ALIGN:center;
+    CURSOR: hand;
+
+	HEIGHT:25;
+	WIDTH:25;
+	BORDER:1px solid black;
+	BORDER-TOP:1px solid white;
+	BORDER-LEFT:1px solid white;
+  }
+
+
+.TSpeedButtonDown
+  {
+    POSITION: absolute;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+    TEXT-ALIGN:center;
+    CURSOR: hand;
+
+	HEIGHT:25;
+	WIDTH:25;
+	border-top:1px solid black;
+	border-left:1px solid black;
+	background:#e1e1e1;
+  }
+
+
+.TComboBox
+  {
+    POSITION: absolute;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 9pt;
+    WIDTH: 145px;
+    HEIGHT: 21px;
+  }
+
+.TListBox
+  {
+    POSITION: absolute;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 9pt;
+  }
+
+.TGroupBox
+  {
+    POSITION: absolute;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+  }
+
+.TImage
+  {
+    POSITION: absolute;
+  }
+
+TABLE.TTableGrid
+  {
+    BORDER-LEFT: 1px solid activeborder; 
+    BORDER-BOTTOM: 1px solid activeborder;
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+    COLOR: buttontext;
+  }
+
+TD.TTableRowUnSelected
+  { 
+    BORDER-RIGHT: 1px solid activeborder; 
+    BORDER-TOP: 1px solid activeborder; 
+    BACKGROUND-COLOR:white;
+    COLOR: buttontext;
+  }
+
+TD.TTableRowSelected
+  { 
+    BORDER-RIGHT: 1px solid activeborder; 
+    BORDER-TOP: 1px solid activeborder; 
+    BACKGROUND-COLOR:highlight;
+    COLOR: highlighttext;
+  }
+
+.THTMLEditMainContainer
+{
+	overflow:auto;
+	background:threedshadow;
+	border:inset;
+}
+
+.THTMLEditZoomContainer 
+{
+	position:absolute;
+	zoom:100%;
+	width:100%;
+}
+
+.THTMLEditPageBorder
+{
+	display:inline;
+	background:black;
+	border-left:1px solid black;
+	border-top:1px solid black;
+	border-right:4px solid black;
+	border-bottom:4px solid black;
+	margin:5px;
+}
+
+.THTMLEditPage
+{
+	background:white;
+	zoom:100%;
+}
+
+.THTMLEditTextBox
+{
+	margin:20px;
+	border:1px dashed gray;
+	overflow:auto;
+
+    FONT-FAMILY: "Times New Roman";
+    FONT-Size: 12pt;
+    CURSOR: text;
+}
+
+.TAnswerEdit
+  {
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 9pt;
+  }
+
+.TAnswerButton
+  {
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 8pt;
+    CURSOR: hand;
+  }  
+
+.TAnswerComboBox
+  {
+    FONT-FAMILY: "MS Sans Serif";
+    FONT-Size: 9pt;
+    WIDTH: 145px;
+    HEIGHT: 21px;
+  }

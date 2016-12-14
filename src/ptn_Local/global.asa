@@ -1,0 +1,24 @@
+<!-- METADATA NAME="Microsoft ActiveX Data Objects 2.1 Library"
+              TYPE="TypeLib" UUID="00000201-0000-0010-8000-00AA006D2EA4" -->
+<SCRIPT LANGUAGE=VBScript RUNAT=Server>
+
+'Session_OnStart        Runs the first time a user runs any page in your application
+'Session_OnEnd          Runs when a user's session times out or quits your application
+'Application_OnStart    Runs once when the first page of your application is run for the first time by any user
+'Application_OnEnd      Runs once when the web server shuts down
+
+Sub Application_OnStart
+	Application("DSN") = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=c:\Work\PTN\db\ptn.mdb"
+End sub
+
+Sub Session_OnStart
+	s = Replace(Request.ServerVariables("URL").Item, "\", "/")
+	If Left(s,1)<>"/" Then s = "/" & s
+	s2 = Left(s, InStr(2,s,"/",1)) & "default.asp"
+	If LCase(s)<>LCase(s2) Then
+		Session.Abandon 
+		Response.Redirect s2
+	End If
+End Sub
+</SCRIPT>
+

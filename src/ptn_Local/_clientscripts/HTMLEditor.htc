@@ -1,0 +1,161 @@
+<PUBLIC:ATTACH EVENT="onmouseover" ONEVENT="SpeedBtnShowUp"/>
+<PUBLIC:ATTACH EVENT="onmouseout" ONEVENT="SpeedBtnShowNormal"/>
+<PUBLIC:ATTACH EVENT="onmouseup" ONEVENT="SpeedBtnShowUp"/>
+<PUBLIC:ATTACH EVENT="onmousedown" ONEVENT="SpeedBtnShowDown"/>
+<PUBLIC:ATTACH EVENT="onclick" ONEVENT="SpeedBtnClicked"/>
+<PUBLIC:ATTACH EVENT="onchange" ONEVENT="ComboChanged"/>
+
+<script language=vbscript>
+Sub SpeedBtnShowNormal
+	if element.tagName <> "DIV" then Exit Sub
+	element.className="TSpeedButton"
+End Sub
+
+Sub SpeedBtnShowUp
+	if element.tagName <> "DIV" then Exit Sub
+	element.className="TSpeedButtonUp"
+End Sub
+
+Sub SpeedBtnShowDown
+	if element.tagName <> "DIV" then Exit Sub
+	element.className="TSpeedButtonDown"
+End Sub
+
+
+' Handle SpeedButtons OnClick events
+Sub SpeedBtnClicked
+	If element.tagName <> "DIV" Then Exit Sub
+	If Not SelectionInEditPage(element.document.selection) Then Exit Sub
+
+	Select Case LCase(element.id)
+		case "btnbold"          element.document.execCommand "Bold"
+		case "btnitalic"        element.document.execCommand "Italic"
+		case "btnunderline"     element.document.execCommand "Underline"
+		case "btnstrike"        element.document.execCommand "StrikeThrough"
+		case "btnsuperscript"   element.document.execCommand "SuperScript"
+		case "btnsubscript"     element.document.execCommand "SubScript"
+		case "btnalignleft"     element.document.execCommand "JustifyLeft"
+		case "btnaligncenter"   element.document.execCommand "JustifyCenter"
+		case "btnalignright"    element.document.execCommand "JustifyRight"
+		case "btnorderedlist"   element.document.execCommand "InsertOrderedList"
+		case "btnunorderedlist" element.document.execCommand "InsertUnorderedList"
+		case "btnoutdent"       element.document.execCommand "Outdent"
+		case "btnindent"        element.document.execCommand "Indent"
+
+		case "btnalignvertical"     HandleVerticalAlign element.document.selection
+		case "btninsertimage"       HandleInsertImage element.document.selection
+		case "btnpictureleftalign"  AlignPicture "left", element.document.selection
+		case "btnpicturenoalign"    AlignPicture "noalign", element.document.selection
+		case "btnpicturerightalign" AlignPicture "right", element.document.selection
+	End Select
+End Sub
+
+
+' Handles comboboxes onchange events
+Sub ComboChanged
+	If element.tagName <> "SELECT" Then Exit Sub
+	If Not SelectionInEditPage(element.document.selection) Then Exit Sub
+
+	Select Case LCase(element.id)
+		case "combofontface"    element.document.execCommand "FontName", false, element(element.selectedIndex).value
+		case "combofontsize"    element.document.execCommand "FontSize", false, element(element.selectedIndex).value
+		case "combocolor"       element.document.execCommand "ForeColor", false, element(element.selectedIndex).value
+		case "combobgcolor"     element.document.execCommand "BackColor", false, element(element.selectedIndex).value
+		case "comboborderwidth" PictureBorderWidth element(element.selectedIndex).value, element.document.selection
+		case "combobordercolor" PictureBorderColor element(element.selectedIndex).value, element.document.selection
+	End Select
+End Sub
+
+
+' Returns true if the selected text is inside of editing page
+' The edition page has className = THTMLEditTextBox
+Function SelectionInEditPage(sel)
+	Dim re
+ 
+	re = False
+	Set selrange = sel.createRange
+
+	If LCase(sel.type) = "control" Then
+		Set nparent = selrange(0).parentElement
+	Else
+		Set nparent = selrange.parentElement
+	End If
+	
+	For i=0 To Document.All.Length
+		If UCase(nparent.className) = "THTMLEDITTEXTBOX" Then
+			re = True
+			Exit For
+		Else  
+			if nparent.tagName <> "HTML" Then
+				Set nparent = nparent.parentElement
+			Else
+				Exit For
+			End If    
+		End If  
+	Next
+
+	SelectionInEditPage = re
+End Function
+
+
+' Position the text on horizontal or vertical
+Sub HandleVerticalAlign(sel)
+	If LCase(sel.type) <> "control" Then
+		Set oElem = sel.createRange.parentElement
+		If oElem.currentStyle.writingMode = "tb-rl" Then
+			oElem.style.writingMode = "lr-tb"
+		Else
+			oElem.style.writingMode = "tb-rl"
+		End If	
+	End If	
+End Sub
+
+
+' Returns an object containing selected image (if any)
+Function GetTargetImage(sel)
+	If LCase(sel.type) = "control" Then
+		Set oControl = sel.createRange
+		If oControl.Length = 1 Then _
+			If oControl(0).tagName = "IMG" Then _
+				Set GetTargetImage = oControl(0)
+	End If
+End Function
+
+
+' Inserts an image in editing page
+Sub HandleInsertImage(sel)
+	If Not IsObject(GetTargetImage(sel)) Then ShowAddFileForm
+End Sub  
+
+
+' Align an image
+Sub AlignPicture(direction, sel)
+	If Not IsObject(GetTargetImage(sel)) Then Exit Sub
+	Set oImage = GetTargetImage(sel)
+ 
+	If LCase(direction) = "noalign" Then
+		oImage.removeAttribute "align", 0
+	Else
+		oImage.align = direction
+	End If  
+End Sub
+
+
+' Sets the border width of a picture
+Sub PictureBorderWidth(wid, sel)
+	If Not IsObject(GetTargetImage(sel)) Then Exit Sub
+	Set oImage = GetTargetImage(sel)
+
+	oImage.style.borderWidth = wid
+End Sub
+
+
+' Sets the border color of a picture
+Sub PictureBorderColor(col, sel)
+	If Not IsObject(GetTargetImage(sel)) Then Exit Sub
+	Set oImage = GetTargetImage(sel)
+
+	oImage.style.borderColor = col
+End Sub
+</script>
+

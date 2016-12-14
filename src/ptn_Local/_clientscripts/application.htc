@@ -1,0 +1,83 @@
+<PUBLIC:ATTACH EVENT="onkeydown" ONEVENT="HandleKeyDown"/>
+<PUBLIC:ATTACH EVENT="oncontextmenu" ONEVENT="HandleContextMenu"/>
+
+<script language=vbscript>
+
+' Handle the key down event. 
+' This is used for trapping IE keyboard shortcuts.
+Sub HandleKeyDown
+	Dim keycode, keyar, KeyIt, killkey
+	
+	keyar = Array(_
+				Array(false,  36, 2), _ 
+				Array(false,  39, 2), _ 
+				Array(false,  37, 2), _ 
+				Array(false, 121, 4), _
+				Array(false,   9, 1), _
+				Array(false, 117, 0), _
+				Array(false,   9, 5), _
+				Array(false,  70, 1), _
+				Array(false,  82, 1), _
+				Array(false, 116, 0), _
+				Array(false, 116, 1), _
+				Array(false,  79, 1), _
+				Array(false,  76, 1), _
+				Array(false,  78, 1), _
+				Array(false,  87, 1), _
+				Array(false,  83, 1), _
+				Array(false,  80, 1), _
+				Array(false,  69, 1), _
+				Array(false, 114, 0), _
+				Array(false,  73, 1), _
+				Array(false,  72, 1), _
+				Array(false,  68, 1), _
+				Array(false,  66, 1), _
+				Array(true,   88, 1), _
+				Array(true,   67, 1), _
+				Array(true,   86, 1), _	
+				Array(true,   65, 1), _
+				Array(true,   27, 0), _
+				Array(true,    8, 0)  _
+			)
+	
+	keycode = window.event.keyCode
+	keyspec = 0
+	If window.event.ctrlKey  Then keyspec = keyspec + 1
+	If window.event.altKey   Then keyspec = keyspec + 2
+	If window.event.shiftKey Then keyspec = keyspec + 4
+	editableelem = not NotEditableElement(window.event.srcElement)
+	
+	killkey = false
+	For Each KeyIt In keyar
+		If (KeyIt(1)=keycode) and (KeyIt(2)=keyspec) Then
+			If editableelem Then killkey = not KeyIt(0) Else killkey = true
+			Exit For
+		End If
+	Next
+	
+	If killkey Then
+		window.event.keyCode = 0
+		window.event.returnValue = false
+	End If
+End Sub
+
+' Handle the event raised when the contextual menu appears
+Sub HandleContextMenu
+	If NotEditableElement(window.event.srcElement) then _
+		window.event.returnValue = false
+End Sub
+
+
+' Check the element which raised the key down event
+' and returns true if focused element should not be edited
+Function NotEditableElement(elem)
+	Dim re
+	Select Case elem.tagName
+		Case "INPUT"       If (LCase(elem.type) = "text") or (LCase(elem.type) = "password") Then re = elem.readonly
+		Case "TEXTAREA"    re = elem.readonly
+		Case "DIV", "SPAN" re = not CBool(elem.contenteditable = "true")
+		Case Else re = true
+	End Select
+	NotEditableElement = re 
+End Function
+</script>

@@ -1,0 +1,70 @@
+Sa fac urmatoarele imbunatatiri:
+
+La nivel de utilizator:
+- infatisarea aplicatiei (culoarea de fundal, aspectul butoanelor, etc.)
+
+Pentru administrator:
+- functie de cautare utilizatori
+- filtru pentru studenti dupa mai multe criterii: dupa prof, dupa curs, etc.
+- sa-si poata edita continutul mesajului de confirmare ce va fi trimis cand se valideaza/respinge un utilizator
+  si sa specifice daca vrea sau nu sa se trimita acest email
+  
+Pentru profesor:
+- editarea emailului de confirmare (vezi admin)
+- sa implementez chestiuni de genul revizie la problema, duplicare, validare, etc. ca cele prezente in SpectraLIMS
+- sa poata seta culoarea fundalului la probleme
+
+Pentru performanta:
+- sa trec la lucrul cu Class-e in special urmatoarele:
+     - la incarcarea problemei din BD pe partea de server. Subrutinele 
+       GetPBSavedData si GetPbAnswersString sa le inlocuiesc cu o clasa
+     - controalele pe partea Server de tipul TableControl, TabControl sa 
+       le fac folosind Class-e
+- sa generalizez GetSelectedRecord si GetSelectedRecords si sa le pun intr-o singura subrutina
+- sa fac controlul de tip Table cu selectie multipla cand se tine apasata tasta Ctrl
+- sa uniformizez tratarea erorilor (in unele functii se face tratarea err. local, fn. intorcand 
+  un rezultat dependent de reusita operatiei si apoi stergand erorile aparute
+  iar in altele tratarea se face global)
+- sa implementez functia IIf si sa scot restul de functii de genul CompareTo...
+
+  
+Pentru evitarea erorilor
+- sa testez pe alte sisteme cu setari locale diferite de engleza si sa fiu atent
+  in special la urmatoarele: conversia boolean -> string -> boolean, date -> string,
+  si separatoarele zecimale din numere. Sa testez cu diferite combinatii de setari locale
+  pe server si pe client.
+- sa inlocuiesc Chr(255) -> Chr(1)
+- sa elimin informatiile cu caracter HTML care pot fi introduse
+  de utilizator si memorate in BD si care apoi pot perturpa 
+  afisarea normala a paginii (ex: </TABLE> sau </DIV>)
+- sa nu intre un utilizator simultan de mai multe ori din diferite
+  locuri 
+- un student sa se poata inscrie la un anumit curs doar odata.
+- sa lucrez tranzactional cu operatiile de modificare a bazei de date
+  si sa pun tratarea erorilor la nivel de pagina nu la nivel de subrutina
+  cum mai e acum prin unele locuri.
+- sa fac o componenta .HTC asemanatoare cu mask-ul lui Roly pentru a filtra
+  caracterele ce se introduc la rezultate de tip numeric si sa-l las pe utilizator
+  sa foloseasca setarile regionale definite in Windows.
+- sa migrez aplicatia catre SQLServer si sa folosesc pe cat posibil tehnologii moderne
+  gen XML pentru transferul datelor.
+- sa incerc gruparea paginilor de tipul _dat.asp care furnizeaza informatii pentru TDC-uri
+  intr-o pagina generala
+- sa implementez folosirea caracterelor regionale in enuntul problemelor
+- sa implementez o modalitate de refresh in ferestrele modale pentru a evita expirarea sesiunii
+- sa rezolv problema cu inserarea imaginilor in probleme in IE6 !
+- sa pun titluri la ecrane pentru a se evita ratacirea utilizatorului
+- sa rezolv problema cu stricarea culorii la meniuri si caracterele de la campurile de parola pe WindowsXP
+- sa deschid ferestrele modale de genul ed. pb, viewer test, etc. la cca. 90% din latimea ecranului 
+  pe care il are setat utilizatorul
+- sa pun o facilitate la view-erul de probleme (teste) ca atunci cand da click pe o imagine aceasta sa se
+  deschida in alta fereastra in marime 100% pentru a putea fi observata mai bine
+- sa pun la probleme 2 noi proprietati prin care sa se specifice culoarea de fundal implicita
+  si culoarea implicita de scris (controlul culorilor s-ar face prin adaugarea de noi stiluri la
+  elementele care au drept class pe THTMLEditPage).
+
+Suplimentar
+- sa vad daca la PowerTest .NET i se poate pune un modul de genul
+"Scholar LIMS" adica un modul in care profesorii sa poata crea definitii de foi Excel
+ce vor fi completate de catre studenti cu rezultatele de la laboratoare.
+
