@@ -30,7 +30,7 @@ Features
 Notes
 -----
 
-- For a better understanding of PowerTest.NET capabilities and features please check these [screencasts](docs/screencasts/).
+- For a better understanding of PowerTest.NET capabilities and features we highly recommend to check first these [screencasts](docs/screencasts/).
 - PowerTests.NET was originally designed to be used in educational insitutions from Romania.
 - The powerful problem editor used by PowerTests.NET is also available as a separate project named [Web Word Editor](https://github.com/mveteanu/WebWordEditor)
 
