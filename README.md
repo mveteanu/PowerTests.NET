@@ -26,6 +26,10 @@ Features
 ![Problem Editor](img/pb_editor.png)
 
 
+> For a better understanding of PowerTest.NET capabilities and features
+> please check these [screencasts](docs/screencasts/README.md).
+
+
 Notes
 -----
 
