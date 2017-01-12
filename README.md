@@ -26,13 +26,11 @@ Features
 ![Problem Editor](img/pb_editor.png)
 
 
-> For a better understanding of PowerTest.NET capabilities and features
-> please check these [screencasts](docs/screencasts/README.md).
-
 
 Notes
 -----
 
+- For a better understanding of PowerTest.NET capabilities and features please check these [screencasts](docs/screencasts/README.md).
 - PowerTests.NET was originally designed to be used in educational insitutions from Romania.
 - The powerful problem editor used by PowerTests.NET is also available as a separate project named [Web Word Editor](https://github.com/mveteanu/WebWordEditor)
 
