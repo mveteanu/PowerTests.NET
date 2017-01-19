@@ -28,7 +28,7 @@ Features
 Technology
 ----------
 
-- Front-end: pure DHTML for IE5.5 with VBScript as scripting language
+- Front-end: pure DHTML (DOM + CSS + Scripting) for IE5.5 with VBScript as scripting language
 - Back-end: Classic ASP pages with VBScript as scripting language
 - Database: Microsoft .MDB
 
