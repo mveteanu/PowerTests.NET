@@ -25,7 +25,12 @@ Features
 
 ![Problem Editor](img/pb_editor.png)
 
+Technology
+----------
 
+- Front-end: pure DHTML for IE5.5 with VBScript as scripting language
+- Back-end: Classic ASP pages with VBScript as scripting language
+- Database: Microsoft .MDB
 
 Notes
 -----
