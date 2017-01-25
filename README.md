@@ -25,6 +25,24 @@ Features
 
 ![Problem Editor](img/pb_editor.png)
 
+
+Roles
+-----
+
+- Administrator
+    - Manages system configuration
+    - Creates and manages professor accounts
+- Professor
+    - Creates and manages classes 
+    - Set rules / approves student enrolment to classes
+    - Creates tests and questionnaires
+    - See reports of students’ activity and results
+- Student
+    - Enroll to classes
+    - Takes tests and assessments
+    - View self-results
+
+
 Technology
 ----------
 
@@ -36,7 +54,7 @@ Notes
 -----
 
 - For a better understanding of PowerTest.NET capabilities we highly recommend to check first these [screencasts](docs/screencasts/).
-- PowerTests.NET was originally designed to be used in educational insitutions from Romania.
+- PowerTests.NET was originally designed to be used in educational insitutions from Romania --- and was also later translated to English.
 - The powerful problem editor used by PowerTests.NET is also available as a separate project named [Web Word Editor](https://github.com/mveteanu/WebWordEditor)
 
 ![Analytics](https://ga-beacon.appspot.com/UA-2402433-6/beacon.en.html)
