@@ -9,11 +9,6 @@ Administrators
 
 - [Administrator account overview](avi/admin1_en.avi?raw=true)
 
-<video width="800" height="600" controls>
-  <source src="mp4/admin1_en.m4v?raw=true" type="video/mp4">
-[Administrator account overview](avi/admin1_en.avi?raw=true)
-</video>
-
 
 Professors
 ----------
