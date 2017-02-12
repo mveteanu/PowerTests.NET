@@ -1,1 +1,1 @@
-For screencasts about PowerTests.NET please check the [../docs/screencasts/](../docs/screencasts/) section
+PowerTests.NET screencasts have been moved under [../docs/screencasts/](../docs/screencasts/) folder.
