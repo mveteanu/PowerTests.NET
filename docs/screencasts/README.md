@@ -4,10 +4,6 @@ PowerTests.NET Screencasts
 
 For a better understanding of PowerTests.NET capabilities, please check the following screencasts:
 
-- [Screencasts on VMASOFT website](http://www.vmasoft.net/ptn.html)
-
-Screencasts are also available for download from:
-
 Administrators
 --------------
 
