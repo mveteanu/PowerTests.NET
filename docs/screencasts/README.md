@@ -2,7 +2,7 @@
 PowerTests.NET Screencasts
 ==========================
 
-For a better understanding of PowerTests.NET capabilities, please check the following screencasts
+For a better understanding of PowerTests.NET capabilities, please check the following screencasts:
 
 Administrators
 --------------
