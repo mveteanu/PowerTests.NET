@@ -1,0 +1,179 @@
+/* Credits: This CSS document uses inspiration and elements from http://fable.io/. If you are the owner of fable.io and prefer to remove these elements please contact me. */
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Navigation bar - links at the top */
+.ptn-navbar {
+  background:#313131;
+  padding:0px;
+}
+.navbar {
+  font-size:18pt;
+  background:transparent;
+  border-style:none;
+  margin:0px;
+}
+.navbar .navbar-brand {
+  padding:15px 40px 15px 0px;
+  font-weight:600;
+  font-size:22pt;
+  color:#787878;
+}
+.navbar li a {
+  font-weight:300;
+  font-size:18pt;
+  padding:15px 25px 15px 25px;
+}
+.nav .active a {
+  background-color:#303030 !important;
+  color:#e0e0e0 !important;
+}
+.nav li > a:hover {
+  color:#e0e0e0 !important;
+}
+.navbar-wrapper {
+  max-width:650px;
+  margin:0px auto 0px auto;
+}
+
+
+
+/* Heading - colored box */
+.ptn-heading {
+  background: #5C6BC0;
+  color:#f0f0f0;
+  padding:15px 0px 20px 0px;
+  text-align:center;
+}
+.ptn-heading h1 {
+  font-weight:400;
+  font-size:35pt;
+}
+.ptn-heading p {
+  font-size:20pt;
+}
+.ptn-heading .links {
+  margin:20px 0px 10px 0px;
+}
+.ptn-heading .links a {
+  margin:0px 10px 0px 10px;
+  color:#CC86B0;
+  font-size:14pt;
+}
+.ptn-heading .links a:hover, .ptn-heading .links a:active {
+  text-decoration:none;
+  color:#FFC6E8;
+}
+.ptn-heading .links a i {
+  margin-right:5px;
+}
+
+
+/* Standard page formatting */
+.ptn-content {
+  padding:30px 20px 80px 20px;
+}
+.ptn-content-wrapper p, .ptn-content-wrapper li {
+  font-size:14pt;
+}
+.ptn-content-wrapper code {
+  font:11pt 'Roboto Mono',consolas,monospace;
+}
+.ptn-content-wrapper h1 {
+  font-size:30pt;
+  font-weight:500;
+}
+.ptn-content-wrapper h2 {
+  font-size:24pt;
+  font-weight:500;
+}
+.ptn-content-wrapper h3 {
+  font-size:16pt;
+  font-weight:700;
+}
+.ptn-content-wrapper h4 {
+  font-size:14pt;
+  font-weight:700;
+}
+.ptn-content-wrapper h3 .anchor, .ptn-content-wrapper h2 .anchor, .ptn-content-wrapper h1 .anchor {
+  color:#7A325D;
+}
+.ptn-content-wrapper h3 a.anchor:hover, .ptn-content-wrapper h2 a.anchor:hover, .ptn-content-wrapper h1 a.anchor:hover {
+  text-decoration:none;
+}
+.ptn-content-wrapper table code {
+  background:transparent;
+}
+.ptn-content-wrapper table p {
+  margin:0px;
+}
+.ptn-content-wrapper th {
+  background:#f0f0f0;
+}
+.ptn-content-wrapper tr:nth-child(even) {
+  background:#f8f8f8;
+}
+.ptn-content-wrapper td, .ptn-content-wrapper th {
+  padding:2px 10px 2px 10px;
+}
+.ptn-content-wrapper table {
+  margin:0px 20px 0px 20px;
+  border-left:1px solid #e0e0e0;
+  border-top:1px solid #e0e0e0;
+}
+.ptn-content-wrapper td, .ptn-content-wrapper th {
+  border-right:1px solid #e0e0e0;
+  border-bottom:1px solid #e0e0e0;
+}
+.ptn-content-wrapper .pre, .ptn-content-wrapper .pre td {
+  border-style:none;
+}
+
+/* Styles for some of the special pages */
+.ptn-docs .fa {
+  margin:0px 10px 5px 10px;
+  float:right;
+  font-size:40px;
+}
+
+.ptn-gettingstarted {
+  background:#f4f4f4;
+  margin:30px 0px 30px 0px;
+}
+
+.ptn-buzzwords {
+  padding:30px 0px 30px 0px;
+}
+
+.ptn-buzzwords p {
+  font-size:14pt;
+}
+
+.ptn-buzzwords .fa {
+  margin:25px 20px 20px 0px;
+  float:left;
+  font-size:40px;
+}
+
+.ptn-homepage pre {
+  font-size:11pt;
+  line-height:18pt;
+  padding:12px;
+}
+
+@media(max-width:768px) {
+  .ptn-gettingstarted {
+    padding:0px 20px 0px 20px;
+  }
+  .ptn-buzzwords {
+    padding:20px 30px 20px 30px;
+  }
+}
+
+/* Hide GitHub button so that it does not overlap with menu */
+.gh-forkme { display:none; }
+@media (min-width: 768px) {
+  .gh-forkme { display:block; }
+}

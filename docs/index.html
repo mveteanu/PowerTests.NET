@@ -1,140 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="VMASOFT PowerTests.NET and PowerTest">
-    <meta name="author" content="VMASOFT">
-
-    <title>PowerTests.NET</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="www/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="www/css/site.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <meta name="author" content="VMASOFT - Marian Veteanu">
+    <title>PowerTests.NET - A VMASOFT educational product</title>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Credits: This HTML page uses inspiration and elements from http://fable.io/. If you are the owner of fable.io and prefer to remove these elements please contact me. -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Sans:400,300,600,700|Roboto+Mono' rel='stylesheet' type='text/css'>
+    <link href="www/css/custom.css" rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+  <div class="ptn-navbar">
+  <div class="container">
+  <nav class="navbar navbar-default">
+    <div class="navbar-wrapper">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.powertests.net">PowerTests.NET</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="index.html">home</a></li>
+          <li class=""><a href="screencasts.html">screencasts</a></li>
+          <li class=""><a href="contact.html">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  </div>
+  </div>
 
-                <a class="navbar-brand" href="#">
-                    <img src="www/img/logo_small.png" alt="PowerTests.NET by VMASOFT">
-                </a>
+  <div class="ptn-content-wrapper">
+  
+<div class="ptn-heading ptn-hp-heading">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>PowerTests.NET</h1>
+      <p>The best knowledge assessment software for educational institutions - Marian Veteanu</p>
+    </div>
+  </div>
+</div>
+</div>
 
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="ptn.html">PowerTests.NET</a>
-                    </li>
-                    <li>
-                        <a href="powertests.html">PowerTests Desktop</a>
-                    </li>
-                    <li>
-                        <a href="#">Support</a>
-                    </li>
-                </ul>
+<div class="ptn-homepage">
 
-                
-                <form class="navbar-form navbar-right">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search">
-                    <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit">
-                        <i class="glyphicon glyphicon-search"></i>
-                    </button>
-                    </div>
-                </div>
-                </form>
-                
+  <!--
+<div class="alert alert-success text-center" role="alert">
+  <h1>PowerTests.NET is now on <a href="http://github.com/mveteanu/powertests.net">GitHub.com</a>!</h1>
+  <p>PowerTests.NET and PowerTests are no longer maintained or supported. The full source code of these products can be found on <a href="http://github.com/mveteanu/powertests.net">GitHub.com</a></p>
+</div>
+-->
 
-            </div>
-            <!-- /.navbar-collapse -->
-
-        </div>
-        <!-- /.container -->
-        
-    </nav>
-
-    <!-- Page Content -->
-    <div class="container">
-
-        <!-- Heading Row -->
-        <div class="row">
-            <div class="col-md-12 text-center">
-                <img class="img-responsive img-rounded center-block" src="www/img/banner.png" alt="PowerTests.NET">
-            </div>
-        </div>
-        <!-- /.row -->
-
-
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="well text-center">
-                    PowerTests.NET and PowerTests are no longer maintained or supported. The full source code of these products can be found on GitHub.
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6">
-                <h2>PowerTests .NET</h2>
-                <img class="img-responsive img-rounded" src="www/img/p1.png" alt="PowerTests.NET">
-                <p>Web based assesment application for educational institutions.</p>
-                <a href="ptn.html">Details...</a>
-            </div>
-            <div class="col-md-6">
-                <h2>PowerTests</h2>
-                <img class="img-responsive img-rounded" src="www/img/p2.png" alt="PowerTests Desktop">
-                <p>Client-server assesment tool.</p>
-                <a href="powertests.html">Details...</a>
-            </div>
-        </div>
+<div class="container ptn-buzzwords">
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>For education</h2>
+      <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+      <p>PowerTest .NET is a web based multi-user educational software specially designed for usage in schools and universities as a knowledge assessment tool or for web based learning.
+      </p>
+    </div>
+    <div class="col-sm-6">
+      <h2>Web Based</h2>
+      <i class="fa fa-internet-explorer" aria-hidden="true"></i>
+      <p>PowerTests.NET is web based requiring just Internet Explorer on the client machine. All the data is safely centralized on the institution database and web server.</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <h2>Technology from the 21<sup>st</sup> century</h2>
+      <i class="fa fa-cogs" aria-hidden="true"></i>
+      <p>PowerTests.NET makes use of the latest DHTML technologies from Internet Explorer to implement a rich and responsive user experience in the browser.</p>
+    </div>
+    <div class="col-sm-6">
+      <h2>Easy upgrade</h2>
+      <i class="fa fa-thumbs-up" aria-hidden="true"></i>
+      <p>PowerTests.NET is built using the same principles as previous educational titles <a href="http://www.vmasoft.net/powertests.html">PowerTests</a> and <a href="http://www.vmasoft.net/physics.html">Physics</a> in order to support upgradability.</p>
+    </div>
+  </div>
+</div>
 
 
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Contact the owner of <a href="http://www.vmasoft.net">VMASOFT</a><br>
-                    Marian Veteanu on 
+<div class="ptn-gettingstarted">
+<div class="container" style="padding:20px 0px 30px 0px">
+  <div class="row">
+    <div class="col-md-1 col-lg-2"></div>
+    <div class="col-sm-12 col-md-10 col-lg-8">
+      <h2>PowerTests.NET is now on <a href="http://github.com/mveteanu/powertests.net">GitHub.com</a>!</h2>
+      <p>PowerTests.NET and PowerTests are no longer maintained or supported. The full source code of these products can be found on <a href="http://github.com/mveteanu/powertests.net">GitHub.com</a></p>
+    </div>
+    <div class="col-md-1 col-lg-2"></div>
+  </div>
+</div>
+</div>
+
+
+<div class="container" style="padding:0px 0px 40px 0px; text-align:center;">
+  <div class="row" style="padding-bottom:20px;">
+    <div class="col-md-1 col-lg-2"></div>
+    <div class="col-sm-12 col-md-10 col-lg-8">
+      <h2>Do you want a quick demo? See PowerTests.NET in action!</h2>
+      <p>Watch a brief introduction of PowerTests.NET Problem Editor module by Marian Veteanu, the author of PowerTests and PowerTests.NET. 
+        See how the advanced rich editor helps you create professional questions in no time!</p>
+    </div>
+    <div class="col-md-1 col-lg-2"></div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <video width=800 height=600 class="img-fluid" style="max-width:100%" controls>
+            <source src="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/screencasts/mp4/prof2_en.m4v?raw=true" type="video/mp4">
+            Your browser does not support the video tag.
+            To view the screencast please visit https://github.com/mveteanu/PowerTests.NET/
+      </video>
+    </div>
+  </div>
+</div>
+
+<div style="background:#f4f4f4; margin:30px 0px 0px 0px">
+<div class="container">
+  <div class="row" style="padding:20px 0px 80px 0px">
+    <div class="col-sm-5">
+      <h2>Screencasts</h2>
+      <p>For a quick overview of PowerTests.NET features and capabilities, you can watch the following screencasts (press fullscreen on each video).</p>
+      <div style="text-align:center;padding:20px 0px 0px 0px">
+        <video class="img-fluid" style="width:120px;margin:5px" title="Administrator" controls>
+            <source src="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/screencasts/mp4/admin1_en.m4v?raw=true" type="video/mp4">
+            Your browser does not support the video tag.
+            To view the screencast please visit https://github.com/mveteanu/PowerTests.NET/
+        </video>
+        <video class="img-fluid" style="width:120px;margin:5px" title="Professor - Part I" controls>
+            <source src="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/screencasts/mp4/prof1_en.m4v?raw=true" type="video/mp4">
+            Your browser does not support the video tag.
+            To view the screencast please visit https://github.com/mveteanu/PowerTests.NET/
+        </video>
+        <video class="img-fluid" style="width:120px;margin:5px" title="Professor - Part II" controls>
+            <source src="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/screencasts/mp4/prof2_en.m4v?raw=true" type="video/mp4">
+            Your browser does not support the video tag.
+            To view the screencast please visit https://github.com/mveteanu/PowerTests.NET/
+        </video>
+        <video class="img-fluid" style="width:120px;margin:5px" title="Professor - Part III" controls>
+            <source src="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/screencasts/mp4/prof3_en.m4v?raw=true" type="video/mp4">
+            Your browser does not support the video tag.
+            To view the screencast please visit https://github.com/mveteanu/PowerTests.NET/
+        </video>
+        <video class="img-fluid" style="width:120px;margin:5px" title="Student" controls>
+            <source src="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/screencasts/mp4/stud1_en.m4v?raw=true" type="video/mp4">
+            Your browser does not support the video tag.
+            To view the screencast please visit https://github.com/mveteanu/PowerTests.NET/
+        </video>
+
+      </div>
+    </div>
+    <div class="col-lg-1 hidden-md hidden-sm"></div>
+    <div class="col-lg-6 col-md-7 col-sm-7">
+      <h2>Slides</h2>
+      <p>We recommend you to first watch the screencasts. If you need however more information about the underlying technology, you can also consult the following slides on <a href="https://github.com/mveteanu/PowerTests.NET/tree/master/docs/slides_ppt">GitHub.com</a>!</p>
+      <ul>
+        <li><a href="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/slides_ppt/PowerTest_NET%20-%20Intro.ppt?raw=true">General overview</a></li>
+        <li><a href="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/slides_ppt/PowerTest_NET%20-%20Tehnologii.ppt?raw=true">Technologies</a></li>
+        <li><a href="https://github.com/mveteanu/PowerTests.NET/blob/master/docs/slides_ppt/PowerTest_NET%20-%20DB.ppt?raw=true">Database overview</a></li>
+      </ul>
+
+      <h2>News</h2>
+      <ul>
+        <li><a href="http://www.codeavenger.com/2017/02/06/I-open-source-my-old-software.html">I open source my old software</a> - 6 Feb 2017</li>
+        <li><a href="http://www.codeavenger.com/2001/05/18/WebWord-Editor-article-gets-published-by-NET-Report-magazine.html">Webword Article Gets Published By Net Report</a> - 18 May 2001</li>
+        <li><a href="http://www.codeavenger.com/2001/04/22/Internet-Explorer-Technologies-article-gets-published-by-NET-Report-magazine.html">Internet Explorer Technologies Article Gets Published By Net Report Magazine</a> - 22 Apr 2001</li>
+        <li><a href="http://www.codeavenger.com/1999/11/17/PowerTests-is-launched.html">PowerTests.NET is launched</a> - 19 Mar 2001</li>
+        <li><a href="http://www.codeavenger.com/2000/03/14/PowerTests-is-published-by-CHIP-Magazine.html">PowerTests is published by CHIP magazine</a> - 14 Mar 2000</li>
+        <li><a href="http://www.codeavenger.com/1999/11/17/PowerTests-is-launched.html">PowerTests is launched</a> - 17 Nov 1999</li>
+        <li><a href="http://www.codeavenger.com/1997/09/26/Physics-is-launched.html">Physics is launched</a> - 26 Sep 1997</li>
+        <li><a href="http://www.codeavenger.com/1997/05/09/Mecano.html">Mecano</a> - 9 May 1997</li>
+
+
+
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+
+ <footer>
+            <div class="container">
+                    <p><a href="http://www.powertests.net">PowerTests.NET</a> is a <a href="http://www.vmasoft.net">VMASOFT</a> product. Contact the owner Marian Veteanu<br>
 <a href="https://github.com/mveteanu"><i class="fa fa-github"></i> GitHub</a>
-and
+&nbsp;|&nbsp;
 <a href="https://linkedin.com/in/mveteanu"><i class="fa fa-linkedin"></i> LinkedIn</a>
+&nbsp;|&nbsp;
+<a href="http://www.codeavenger.com"><i class="fa fa-newspaper-o"></i> Code Avenger</a>
                     </p>
-                </div>
             </div>
         </footer>
 
-    </div>
-    <!-- /.container -->
 
-    <!-- jQuery -->
-    <script src="www/js/jquery.js"></script>
+  </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="www/js/bootstrap.min.js"></script>
 
-    <!-- Google Analytics -->
-    <script src="www/js/analytics.js"></script>
+
+
+
+  <a class="gh-forkme" href="https://github.com/mveteanu/PowerTests.NET"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" alt="Fork PowerTests.NET on GitHub"></a>
 
 </body>
-
 </html>
