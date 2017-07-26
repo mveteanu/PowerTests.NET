@@ -6,7 +6,14 @@ Last update: 2003
 Web Application for implementing online testing / assessment in schools and universities.
 [http://www.powertests.net](http://www.powertests.net)
 
-PowerTest .NET is a web based multi-user educational software specially designed for usage in schools and universities as an assessment tool or for web based learning. Due to implemented features, the system can be used as a replacement for traditional assessment methods or as a complementary tool.
+PowerTest .NET is a web based multi-user educational software specially designed for usage in schools and universities as an assessment tool or for web based learning. Due to implemented features, the system can be used as a replacement for traditional assessment methods or as a complementary tool. Originally, the application was designed to be used in educational insitutions from Romania, but later the application was translated to English becoming universal.
+
+
+Screencasts
+-----------
+
+- For a better understanding of PowerTest.NET capabilities we highly recommend to check first these [screencasts](docs/screencasts/).
+
 
 Features
 --------
@@ -53,8 +60,6 @@ Technology
 Notes
 -----
 
-- For a better understanding of PowerTest.NET capabilities we highly recommend to check first these [screencasts](docs/screencasts/).
-- PowerTests.NET was originally designed to be used in educational insitutions from Romania (later translated to English).
 - The powerful problem editor used by PowerTests.NET is also available as a separate project named [Web Word Editor](https://github.com/mveteanu/WebWordEditor)
 
 ![Analytics](https://ga-beacon.appspot.com/UA-2402433-6/beacon.en.html)
