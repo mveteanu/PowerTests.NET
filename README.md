@@ -17,7 +17,7 @@ Screencasts
 
 - For a better understanding of PowerTest.NET capabilities we highly recommend to check first these [screencasts](docs/screencasts/).
 
-![](https://github.com/mveteanu/PowerTests.NET/blob/master/docs/screencasts/mp4/prof2_en.m4v)
+![](https://github.com/mveteanu/PowerTests.NET/blob/master/docs/screencasts/mp4/prof2_en.m4v?raw=true)
 
 Features
 --------
