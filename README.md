@@ -3,7 +3,7 @@ PowerTests.NET
 
 Last update: 2003
 
-Web Application for implementing online testing / assessment in schools and universities.
+PowerTests.NET is one of the first modern web applications released in 2001. At that time it used cutting edge technologies made possible by Internet Explorer 5.5
 
 PowerTest .NET is a web based multi-user educational software specially designed for usage in schools and universities as an assessment tool or for web based learning. Due to implemented features, the system can be used as a replacement for traditional assessment methods or as a complementary tool. Available in Romanian and English.
 
